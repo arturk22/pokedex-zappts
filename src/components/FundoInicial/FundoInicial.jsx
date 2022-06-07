@@ -20,8 +20,7 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 800;
 font-size: 54px;
-line-height: 76px;
-
+line-height: 141%;
 color: #282828;
 `;
 
@@ -31,7 +30,7 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 36px;
+line-height: 225%;
 
 letter-spacing: 0.02em;
 
@@ -47,18 +46,26 @@ background: #48D0B0;
 box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.18);
 border-radius: 11px;
 
+outline: 0;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-color: #FFFFFF;
+
 `;
 
 
 const ImagemFundo = styled.img`
 align-items: center;
+`;
+
+const Link_a = styled.a`
+text-decoration: none;
+color: #FFFFFF;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+align-items: center;
+text-align: center;
 `;
 
 export const FundoInicial = (props) => (
@@ -67,9 +74,9 @@ export const FundoInicial = (props) => (
         <Boxsecundario>
             <TextoPrincipal>Qual Pokemon você escolheria?</TextoPrincipal>
             <TextoSecundario>Você pode saber o tipo de Pokémon, seus pontos fortes fracos e habilidades.</TextoSecundario>
-            <Botao>Veja os pokemons</Botao>
+            <Botao> <Link_a href="/pokemons">Veja os pokemons</Link_a></Botao>
         </Boxsecundario>
-        <ImagemFundo src={fundo} alt="" />
+        <ImagemFundo src={fundo} alt="Pikachu" />
     </Box>
 
 

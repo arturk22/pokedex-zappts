@@ -26,27 +26,33 @@ const Cabecalho__lista = styled.ul`
 `;
 
 const Cabecalho__link = styled.li`
-  font-family: Open Sans;
   font-size: 25px;
   font-weight: 700;
   line-height: 34px;
   margin-right: 5rem;
+  
 `;
 
-export const Cabecalho = (props) => {
+const Cabecalho__link_a = styled.a`
+text-decoration: none;
+color: #212121;
+font-family: Open Sans;
+`;
+
+export const Cabecalho = () => {
   return (
     <CabecalhoC>
       <Cabecalho__logo src={logo} />
       <nav>
         <Cabecalho__lista>
           <Cabecalho__link>
-            <a href="#">Home</a>
+            <Cabecalho__link_a href="/">Home</Cabecalho__link_a>
           </Cabecalho__link>
           <Cabecalho__link>
-            <a href="#">Pokemons</a>
+            <Cabecalho__link_a href="/pokemons">Pokemons</Cabecalho__link_a>
           </Cabecalho__link>
           <Cabecalho__link>
-            <a href="#">Contato</a>
+            <Cabecalho__link_a href="#">Contato</Cabecalho__link_a>
           </Cabecalho__link>
         </Cabecalho__lista>
       </nav>

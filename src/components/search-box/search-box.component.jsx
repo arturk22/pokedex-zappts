@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { SearchIcon } from "@primer/octicons-react";
-import "../style.css"
 
 const Search = styled.input`
   border: none;
@@ -12,16 +11,12 @@ const Search = styled.input`
   text-align: left;
   font-size: 1.2rem;
   margin-right: 12rem;
+  font-family: 'Open Sans';
   
 `;
 
 const Texto = styled.h2`
-left: -0.74%;
-right: -0.74%;
-top: 0%;
-bottom: 71.81%;
-
-font-family: 'Inter';
+font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 35px;

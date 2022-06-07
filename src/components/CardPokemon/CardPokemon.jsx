@@ -21,7 +21,7 @@ const ImgPokemon = styled.img`
   margin-right: auto;
 `;
 
-const PokemonName = styled.h2`
+const PokemonName = styled.a`
   color: #000000;
   text-decoration: none;
 `;

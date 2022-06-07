@@ -3,6 +3,7 @@ import styled from "styled-components";
 import CardPokemon from "../CardPokemon/CardPokemon";
 
 
+
 const Card_List = styled.div`
   width: 85vw;
   margin: 0 auto;
@@ -67,18 +68,20 @@ line-height: 22px;
 `;
 
 
-export const CardList = (props) => (
+export const CardList = (props) => {
+
+  return (
   <>
   <Card__lista_nav>
-    <Card__link>Tipo</Card__link>
-    <Card__link>Ataque</Card__link>
-    <Card__link>Defesa</Card__link>
-  </Card__lista_nav>
-  <Card_List>
-      {props.pokemons.map((pokemon) => (
-        <CardPokemon key={pokemon.name} {... pokemon.id} pokemon={pokemon}></CardPokemon>
-      ))}
-    </Card_List></>
-);
+      <Card__link>Tipo</Card__link>
+      <Card__link>Ataque</Card__link>
+      <Card__link>Defesa</Card__link>
+    </Card__lista_nav><Card_List>
+        {props.pokemons.map((pokemon) => (
+          <CardPokemon key={pokemon.name} pokemon={pokemon}></CardPokemon>
+        ))}
+      </Card_List></>
+  );
+};
 
 export default CardList;
