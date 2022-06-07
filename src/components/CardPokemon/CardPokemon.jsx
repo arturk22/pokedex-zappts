@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { sombra } from "../UI/variaveis";
 
 const Card_container = styled.div`
   display: flex;
@@ -9,7 +10,7 @@ const Card_container = styled.div`
   border-radius: 15px;
   padding: 1rem;
   transition: transform 0.25s ease-out;
-  box-shadow: 2px 2px 2px rgba(33, 33, 33, 0.1);
+  box-shadow: ${sombra};
   font-family: "Righteous", cursive;
 `;
 

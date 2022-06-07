@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CardPokemon from "../CardPokemon/CardPokemon";
+import { fonteOpen, sombra } from "../UI/variaveis";
 
 
 
@@ -49,6 +50,10 @@ const Card__lista_nav = styled.ul`
   align-items: center;
   margin-left: 4rem;
   margin-bottom: 4rem;
+  @media screen and (max-width: 1024px) {
+    align-items: flex-start;
+    margin-left: 0px;
+}
 `;
 
 const Card__link = styled.li`
@@ -57,14 +62,18 @@ border-radius: 4px;
 height: 1rem;
 width: 8rem;
 text-align: center;
-background: #F2F2F2;
 font-weight: bold;
-box-shadow: 2px 2px 2px rgba(33, 33, 33, 0.1);
-font-family: 'Open Sans';
-font-style: normal;
+box-shadow: ${sombra};
+font-family: ${fonteOpen};
 font-weight: 400;
 font-size: 16px;
 line-height: 22px;
+
+@media screen and (max-width: 1024px) {
+  margin-bottom: 2rem;
+  margin-left: 4px;
+}
+
 `;
 
 
